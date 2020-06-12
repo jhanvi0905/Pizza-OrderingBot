@@ -1,0 +1,740 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "greet",
+        "text": "Hi!"
+      },
+      {
+        "intent": "greet",
+        "text": "Hello!"
+      },
+      {
+        "intent": "greet",
+        "text": "Hi! Can you help me order"
+      },
+      {
+        "intent": "greet",
+        "text": "Hey"
+      },
+      {
+        "intent": "greet",
+        "text": "Hello Friend"
+      },
+      {
+        "intent": "greet",
+        "text": "Hey!"
+      },
+      {
+        "intent": "greet",
+        "text": "Good Morning!"
+      },
+      {
+        "intent": "greet",
+        "text": "Good Afternoon!"
+      },
+      {
+        "intent": "greet",
+        "text": "Good Evening!"
+      },
+      {
+        "intent": "order_pizza",
+        "text": "Hey I want to order a pizza"
+      },
+      {
+        "intent": "order_pizza",
+        "entities": [
+          {
+            "start": 16,
+            "end": 26,
+            "value": "margharita",
+            "entity": "pizzat"
+          },
+          {
+            "start": 38,
+            "end": 44,
+            "value": "cheese",
+            "entity": "toppings"
+          }
+        ],
+        "text": "Hello I need a  margharita with extra cheese"
+      },
+      {
+        "intent": "order_pizza",
+        "entities": [
+          {
+            "start": 9,
+            "end": 13,
+            "value": "thin",
+            "entity": "crust"
+          },
+          {
+            "start": 20,
+            "end": 30,
+            "value": "Neopolitan",
+            "entity": "pizzat"
+          },
+          {
+            "start": 42,
+            "end": 61,
+            "value": "olives and jalpenos",
+            "entity": "toppings"
+          }
+        ],
+        "text": "I need a thin crust Neopolitan pizza with olives and jalpenos"
+      },
+      {
+        "intent": "order_pizza",
+        "entities": [
+          {
+            "start": 20,
+            "end": 24,
+            "value": "Thin",
+            "entity": "crust"
+          },
+          {
+            "start": 32,
+            "end": 42,
+            "value": "Margharita",
+            "entity": "pizzat"
+          },
+          {
+            "start": 49,
+            "end": 61,
+            "value": "extra cheese",
+            "entity": "toppings"
+          }
+        ],
+        "text": "I need a pizza with Thin crust, Margharita, with extra cheese."
+      },
+      {
+        "intent": "order_pizza",
+        "entities": [
+          {
+            "start": 20,
+            "end": 25,
+            "value": "Thick",
+            "entity": "crust"
+          },
+          {
+            "start": 33,
+            "end": 43,
+            "value": "Margharita",
+            "entity": "pizzat"
+          },
+          {
+            "start": 50,
+            "end": 75,
+            "value": "capsicum and extra cheese",
+            "entity": "toppings"
+          }
+        ],
+        "text": "I need a pizza with Thick crust, Margharita, with capsicum and extra cheese."
+      },
+      {
+        "intent": "order_pizza",
+        "entities": [
+          {
+            "start": 18,
+            "end": 22,
+            "value": "thin",
+            "entity": "crust"
+          },
+          {
+            "start": 29,
+            "end": 39,
+            "value": "Margharita",
+            "entity": "pizzat"
+          }
+        ],
+        "text": "I want to order a thin crust Margharita pizza."
+      },
+      {
+        "intent": "order_pizza",
+        "entities": [
+          {
+            "start": 18,
+            "end": 23,
+            "value": "thick",
+            "entity": "crust"
+          },
+          {
+            "start": 63,
+            "end": 82,
+            "value": "cheese and pepproni",
+            "entity": "toppings"
+          }
+        ],
+        "text": "I want to order a thick crust [Neopolitan pizza] (pizzat) with cheese and pepproni"
+      },
+      {
+        "intent": "order_pizza",
+        "entities": [
+          {
+            "start": 16,
+            "end": 17,
+            "value": "2",
+            "entity": "Qty"
+          },
+          {
+            "start": 18,
+            "end": 26,
+            "value": "American",
+            "entity": "pizzat"
+          },
+          {
+            "start": 39,
+            "end": 43,
+            "value": "thin",
+            "entity": "crust"
+          },
+          {
+            "start": 55,
+            "end": 67,
+            "value": "extra cheese",
+            "entity": "toppings"
+          }
+        ],
+        "text": "I want to order 2 American pizzas with thin crust with extra cheese."
+      },
+      {
+        "intent": "order_pizza",
+        "entities": [
+          {
+            "start": 18,
+            "end": 28,
+            "value": "Neopolitan",
+            "entity": "pizzat"
+          }
+        ],
+        "text": "I want to order a Neopolitan pizza."
+      },
+      {
+        "intent": "order_pizza",
+        "entities": [
+          {
+            "start": 18,
+            "end": 28,
+            "value": "Margharita",
+            "entity": "pizzat"
+          }
+        ],
+        "text": "I need to order a Margharita."
+      },
+      {
+        "intent": "order_pizza",
+        "entities": [
+          {
+            "start": 16,
+            "end": 19,
+            "value": "2",
+            "entity": "Qty"
+          },
+          {
+            "start": 20,
+            "end": 30,
+            "value": "Margharita",
+            "entity": "pizzat"
+          }
+        ],
+        "text": "I need to order two Margharita"
+      },
+      {
+        "intent": "order_pizza",
+        "entities": [
+          {
+            "start": 10,
+            "end": 18,
+            "value": "American",
+            "entity": "pizzat"
+          },
+          {
+            "start": 30,
+            "end": 55,
+            "value": "extra cheese and pepproni",
+            "entity": "toppings"
+          }
+        ],
+        "text": "I want an American pizza with extra cheese and pepproni."
+      },
+      {
+        "intent": "order_pizza",
+        "entities": [
+          {
+            "start": 24,
+            "end": 29,
+            "value": "3",
+            "entity": "Qty"
+          },
+          {
+            "start": 30,
+            "end": 40,
+            "value": "Neopolitan",
+            "entity": "pizzat"
+          }
+        ],
+        "text": "Hey, Can you deliver me three Neopolitan pizzas please?"
+      },
+      {
+        "intent": "order_pizza",
+        "text": "I need a pizza delivery"
+      },
+      {
+        "intent": "order_pizza",
+        "text": "I need to order [5] (Qty) pizzas."
+      },
+      {
+        "intent": "order_pizza",
+        "entities": [
+          {
+            "start": 9,
+            "end": 13,
+            "value": "thin",
+            "entity": "crust"
+          },
+          {
+            "start": 25,
+            "end": 44,
+            "value": "Olives and Jalpenos",
+            "entity": "toppings"
+          }
+        ],
+        "text": "I need a thin pizza with Olives and Jalpenos"
+      },
+      {
+        "intent": "order_pizza",
+        "entities": [
+          {
+            "start": 19,
+            "end": 27,
+            "value": "American",
+            "entity": "pizzat"
+          },
+          {
+            "start": 28,
+            "end": 32,
+            "value": "thin",
+            "entity": "crust"
+          }
+        ],
+        "text": "I want to order an American thin crust pizza."
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "thin",
+            "entity": "crust"
+          }
+        ],
+        "text": "thin crust."
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Thin",
+            "entity": "crust"
+          }
+        ],
+        "text": "Thin crust."
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "Thick",
+            "entity": "crust"
+          }
+        ],
+        "text": "Thick crust."
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "thick",
+            "entity": "crust"
+          }
+        ],
+        "text": "thick crust."
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "Margharita",
+            "entity": "pizzat"
+          }
+        ],
+        "text": "Margharita"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "American",
+            "entity": "pizzat"
+          }
+        ],
+        "text": "American"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "Margharita",
+            "entity": "pizzat"
+          }
+        ],
+        "text": "Margharita pizza"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "American",
+            "entity": "pizzat"
+          }
+        ],
+        "text": "American pizza."
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 25,
+            "value": "Capsicum and extra cheese",
+            "entity": "toppings"
+          }
+        ],
+        "text": "Capsicum and extra cheese"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 25,
+            "value": "pepproni and extra cheese",
+            "entity": "toppings"
+          }
+        ],
+        "text": "pepproni and extra cheese"
+      },
+      {
+        "intent": "inform",
+        "text": "[Onions and capsicum] (toppings)"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 12,
+            "value": "extra cheese",
+            "entity": "toppings"
+          }
+        ],
+        "text": "extra cheese"
+      },
+      {
+        "intent": "inform",
+        "text": "[None] (toppings)"
+      },
+      {
+        "intent": "inform",
+        "text": "[No toppings] (toppings)"
+      },
+      {
+        "intent": "inform",
+        "text": "[pepproni] (toppings)"
+      },
+      {
+        "intent": "inform",
+        "text": "[Extra Cheese] (toppings)"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 11,
+            "end": 15,
+            "value": "thin",
+            "entity": "crust"
+          }
+        ],
+        "text": "I'd like a thin pizza."
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 12,
+            "end": 15,
+            "value": "\"None\"",
+            "entity": "toppings"
+          }
+        ],
+        "text": "I dont want any toppings."
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 11,
+            "end": 21,
+            "value": "Neopolitan",
+            "entity": "pizzat"
+          }
+        ],
+        "text": "I prefer a Neopolitan."
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "2",
+            "entity": "Qty"
+          }
+        ],
+        "text": "two"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "3",
+            "entity": "Qty"
+          }
+        ],
+        "text": "three"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "4",
+            "entity": "Qty"
+          }
+        ],
+        "text": "four pizzas"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 1,
+            "value": "2",
+            "entity": "Qty"
+          }
+        ],
+        "text": "2"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 1,
+            "value": "3",
+            "entity": "Qty"
+          }
+        ],
+        "text": "3"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 1,
+            "value": "4",
+            "entity": "Qty"
+          }
+        ],
+        "text": "4"
+      },
+      {
+        "intent": "done",
+        "text": "Thank you"
+      },
+      {
+        "intent": "done",
+        "text": "Thanks"
+      },
+      {
+        "intent": "done",
+        "text": "Okay"
+      },
+      {
+        "intent": "done",
+        "text": "Okay Thanks"
+      },
+      {
+        "intent": "done",
+        "text": "Okay Thank you"
+      },
+      {
+        "intent": "done",
+        "text": "um thank you good bye"
+      },
+      {
+        "intent": "done",
+        "text": "okay cool uh good bye thank you"
+      },
+      {
+        "intent": "done",
+        "text": "okay thank you good bye"
+      },
+      {
+        "intent": "done",
+        "text": "you rock"
+      },
+      {
+        "intent": "done",
+        "text": "and thats all thank you and good bye"
+      },
+      {
+        "intent": "done",
+        "text": "thank you and good bye"
+      },
+      {
+        "intent": "done",
+        "text": "sorry about my mistakes thank you good bye"
+      },
+      {
+        "intent": "done",
+        "text": "noise thank you good bye"
+      },
+      {
+        "intent": "done",
+        "text": "thank you goodbye noise"
+      },
+      {
+        "intent": "done",
+        "text": "okay thank you goodbye"
+      },
+      {
+        "intent": "done",
+        "text": "uh thank you good bye"
+      },
+      {
+        "intent": "done",
+        "text": "thank you goodbye"
+      },
+      {
+        "intent": "done",
+        "text": "thank you goodbye noise thank you goodbye"
+      },
+      {
+        "intent": "done",
+        "text": "breath thank you goodbye"
+      },
+      {
+        "intent": "done",
+        "text": "thank you"
+      },
+      {
+        "intent": "done",
+        "text": "okay thank you"
+      },
+      {
+        "intent": "done",
+        "text": "thanks goodbye"
+      },
+      {
+        "intent": "done",
+        "text": "ah thank you goodbye"
+      },
+      {
+        "intent": "done",
+        "text": "thank you noise"
+      },
+      {
+        "intent": "done",
+        "text": "thank you good bye"
+      },
+      {
+        "intent": "done",
+        "text": "breath thank you very much goodbye"
+      },
+      {
+        "intent": "done",
+        "text": "thanks"
+      },
+      {
+        "intent": "done",
+        "text": "noise thank you goodbye"
+      },
+      {
+        "intent": "done",
+        "text": "unintelligible thank you goodbye"
+      },
+      {
+        "intent": "done",
+        "text": "uh okay thank you good bye"
+      },
+      {
+        "intent": "done",
+        "text": "thank you bye"
+      },
+      {
+        "intent": "done",
+        "text": "um okay thank you good bye"
+      }
+    ],
+    "regex_features": [],
+    "lookup_tables": [],
+    "entity_synonyms": [
+      {
+        "value": "2",
+        "synonyms": [
+          "two"
+        ]
+      },
+      {
+        "value": "3",
+        "synonyms": [
+          "three"
+        ]
+      },
+      {
+        "value": "\"None\"",
+        "synonyms": [
+          "any"
+        ]
+      },
+      {
+        "value": "4",
+        "synonyms": [
+          "four"
+        ]
+      }
+    ]
+  }
+}

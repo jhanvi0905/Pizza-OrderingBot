@@ -1,0 +1,25 @@
+{
+  "states": [
+    "intent_done",
+    "intent_greet",
+    "intent_inform",
+    "intent_order_pizza",
+    "entity_crust",
+    "entity_pizzat",
+    "entity_toppings",
+    "entity_Qty",
+    "prev_action_listen",
+    "prev_action_restart",
+    "prev_action_default_fallback",
+    "prev_action_deactivate_form",
+    "prev_action_revert_fallback_events",
+    "prev_action_default_ask_affirmation",
+    "prev_action_default_ask_rephrase",
+    "prev_action_back",
+    "prev_utter_slot_values",
+    "prev_utter_greet",
+    "prev_utter_noworries",
+    "prev_pizza_form",
+    "active_form_pizza_form"
+  ]
+}
