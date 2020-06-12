@@ -1,0 +1,57 @@
+intents:
+- order_pizza
+- greet
+- inform
+- done
+
+entities:
+- crust
+- pizzat
+- toppings
+- Qty
+
+slots:
+    crust:
+        type: unfeaturized
+    pizzat:
+        type: unfeaturized
+    toppings:
+        type: unfeaturized
+    Qty:
+        type: unfeaturized
+    
+templates:
+    utter_ask_crust:
+    - text: "What crust delights your taste buds?"
+    utter_ask_pizzat:
+    - text: "What type of pizza would you Prefer?"
+    utter_ask_toppings:
+    - text:"Do you require any add-ons on your pizza(s)?"
+    utter_ask_Qty:
+    - text: "How many such pizzas you need to place an order for?"
+    utter_submit:
+    - text: "Your order is placed. It will be delievered shortly"
+    utter_slot_values:
+    - text: " Your order summary is as follows:\n
+              - crust: {crust}\n
+              - Pizza type: {pizzat}\n
+              - Add-ons: {toppings}\n
+              - Quantity: {Qty}"
+    utter_wrong_crust:
+    - text: "Sorry we don't serve this crust, we will try to include your preference next time"
+    utter_wrong_pizzat:
+    - text: "Sorry we don't serve this pizza type, we will try to include your preference next time"
+    utter_wrong_toppings:
+    - text: "Sorry we don't serve this toppings, we will try to include your preference next time"
+    utter_greet:
+    - text: "Hey! I am a pizza bot, How can I help you?"
+    utter_noworries:
+    - text: "Glad to help you! Hope to serve you the best!"
+    
+actions:
+- utter_slot_values
+- utter_greet
+- utter_noworries
+
+forms: 
+- pizza_form
