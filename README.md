@@ -15,5 +15,5 @@ Just a little implementation of your everyday to go pizza ordering bot which hel
 # Actions:
 The action templates for various kinds of reply on various user inputs are defined. However alongside, a fixed form action is also defined- responsible for attaining all the required information fields relating to pizza ordering by the bot. 
 
-[!Deployed Bot](https://github.com/jhanvi0905/Pizza-OrderingBot/blob/master/Screenshot%20(47).png)
-[!Deployed Bot](https://github.com/jhanvi0905/Pizza-OrderingBot/blob/master/Screenshot%20(48).png)
+![Deployed Bot](https://github.com/jhanvi0905/Pizza-OrderingBot/blob/master/Screenshot%20(47).png)
+![Deployed Bot](https://github.com/jhanvi0905/Pizza-OrderingBot/blob/master/Screenshot%20(48).png)
